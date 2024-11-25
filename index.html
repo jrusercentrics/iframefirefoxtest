@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e2769309-3672-42d4-bc3f-d56333e6a880" data-blockingmode="auto" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe Test Page</h1>
+    <p>Below is an iframe embedded from YouTube:</p>
+    <iframe 
+        width="360" 
+        height="203" 
+        src="https://www.youtube.com/embed/IrdCBkXB91I?feature=oembed&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=IrdCBkXB91I" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen 
+        title="Test Video" 
+        id="bgv-e74ac5251b4f18"
+        class="use-fitvids">
+    </iframe>
+
+    <p>
+        Use the browser's developer tools to inspect the iframe behavior.
+    </p>
+
+    <script>
+        // Example script to manipulate the iframe
+        const iframe = document.getElementById("bgv-e74ac5251b4f18");
+        console.log("Original iframe referrerpolicy:", iframe.getAttribute("referrerpolicy"));
+
+        // Optionally change the referrerpolicy
+        iframe.setAttribute("referrerpolicy", "no-referrer");
+        console.log("Updated iframe referrerpolicy:", iframe.getAttribute("referrerpolicy"));
+    </script>
+</body>
+</html>
