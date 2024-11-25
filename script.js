@@ -25,6 +25,7 @@ function startMutationObserver(tNode, c) {
 }
 startMutationObserver(document);
 window.addEventListener('CookiebotOnAccept', function(e) {
+    console.log("a aceitar");
     document.querySelectorAll("iframe").forEach(ele => {
         if (ele.dataset.cookieconsent) {
             const consents = ele.dataset.cookieconsent.split(',');
@@ -39,6 +40,7 @@ window.addEventListener('CookiebotOnAccept', function(e) {
     })
 });
 window.addEventListener('CookiebotOnDecline', function() {
+    console.log("a recusar");
     document.querySelectorAll("iframe").forEach(ele => {
         addOptoutContainerToIframe(ele)
     })
