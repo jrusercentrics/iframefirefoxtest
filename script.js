@@ -40,9 +40,10 @@ window.addEventListener('CookiebotOnAccept', function(e) {
     })
 });
 window.addEventListener('CookiebotOnDecline', function() {
-    console.log("a recusar");
+    
     document.querySelectorAll("iframe").forEach(ele => {
         addOptoutContainerToIframe(ele)
+        console.log("a recusar");
     })
 });
 document.addEventListener('DOMContentLoaded', function() {
