@@ -6,6 +6,55 @@
   
  
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e2769309-3672-42d4-bc3f-d56333e6a880" data-blockingmode="auto" type="text/javascript"></script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WB52WTHD');</script>
+<!-- End Google Tag Manager -->
+
+  <script data-cookieconsent="ignore">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // 1) REGIONAL (onde há banner) → denied por defeito
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'denied',
+    personalization_storage: 'denied',
+    security_storage: 'granted',
+    wait_for_update: 500,
+    region: [
+      // União Europeia (Estados-Membros)
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR',
+      'HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK',
+      'SI','ES','SE',
+      // Estados Unidos
+      'US',
+      // Brasil
+      'BR'
+    ]
+  });
+
+  // 2) DEFAULT GLOBAL (resto do mundo) → granted
+  gtag('consent', 'default', {
+    ad_storage: 'granted',
+    ad_user_data: 'granted',
+    ad_personalization: 'granted',
+    analytics_storage: 'granted',
+    functionality_storage: 'granted',
+    personalization_storage: 'granted',
+    security_storage: 'granted'
+  });
+
+  gtag('set', 'ads_data_redaction', true);
+  gtag('set', 'url_passthrough', true); /* põe false se não quiseres query param _ga */
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe Test Page</title>
@@ -21,35 +70,12 @@
     </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZZRHWZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <h1>Iframe Test Page</h1>
     <p>Below is an iframe embedded from YouTube:</p>
-  <section>
-      <div id="ssp-b920" class="static-spot">
-            <div class="image">
-
-                    <div class="bg-video"><iframe width="360" height="203" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" title="Test Video" class="use-fitvids cookieconsent-optin-marketing" id="bgv-f6fa53f1a5883" style="display: block;" src="https://www.youtube.com/embed/IrdCBkXB91I?feature=oembed&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=IrdCBkXB91I"></iframe><div class="cc-placeholder  cookieconsent-optout-marketing" data-cc-index="2" style="padding-top: 56.3889%; display: none;"><div class="cc-wrapper" style="margin-top: -56.3889%;"><p><span class="txt-sz-4" style="color: rgb(0, 51, 102);">Følgende indhold kræver samtykke accept af disse kategorier:</span><br><span class="txt-sz-5" style="color: rgb(0, 51, 102);">Marketing</span></p><a class="btn" tabindex="0">Ændre dit samtykke her</a></div></div></div>
-            </div>
-
-            <div class="text">
-                <h2 class="heading" id="h-07ea">Kontakt os</h2>
-<p>Du er velkommen til at ringe til os og få gode råd og vejledning samt et uforpligtende tilbud på en gulvbehandling.</p>            </div>
-
-        <div class="link link link-wrapper" id="slww-b920"><a aria-label="Kontakt" href="https://umbraco13.synergiweb.dk/kontakt/"><span>Læs mere</span></a></div>
-    </div>
-    </section>
-    <section>
-      <div id="ssp-b920" class="static-spot">
-            <div class="image">
-
-                    <div class="bg-video"><iframe width="360" height="203" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" title="Test Video" class="use-fitvids cookieconsent-optin-marketing" id="bgv-f6fa53f1a5883" style="display: block;" src="https://www.youtube.com/embed/IrdCBkXB91I?feature=oembed&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=IrdCBkXB91I"></iframe><div class="cc-placeholder  cookieconsent-optout-marketing" data-cc-index="2" style="padding-top: 56.3889%; display: none;"><div class="cc-wrapper" style="margin-top: -56.3889%;"><p><span class="txt-sz-4" style="color: rgb(0, 51, 102);">Følgende indhold kræver samtykke accept af disse kategorier:</span><br><span class="txt-sz-5" style="color: rgb(0, 51, 102);">Marketing</span></p><a class="btn" tabindex="0">Ændre dit samtykke her</a></div></div></div>
-            </div>
-
-            <div class="text">
-                <h2 class="heading" id="h-07ea">Kontakt os</h2>
-<p>Du er velkommen til at ringe til os og få gode råd og vejledning samt et uforpligtende tilbud på en gulvbehandling.</p>            </div>
-
-        <div class="link link link-wrapper" id="slww-b920"><a aria-label="Kontakt" href="https://umbraco13.synergiweb.dk/kontakt/"><span>Læs mere</span></a></div>
-    </div>
-    </section>
+  
 </body>
 </html>
